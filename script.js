@@ -4,9 +4,9 @@ function updateClock() {
   var minute = now.getMinutes();
   var second = now.getSeconds();
 
-  var hourHand = document.getElementByClassName('hour-hand');
-  var minHand = document.getElementByClassName('min-hand');
-  var secondHand = document.getElementByClassName('second-hand');
+  var hourHand = document.getElementByClassName('hand hour-hand');
+  var minHand = document.getElementByClassName('hand min-hand');
+  var secondHand = document.getElementByClassName('hand second-hand');
 
   // Calculate the rotation angles for the clock hands
   var hourRotation = 30 * (hour % 12) + minute / 2; // Each hour is 30 degrees, and each minute adds 0.5 degrees
